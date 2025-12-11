@@ -75,7 +75,6 @@ function RainbowUI:CreateWindow(width, height)
     floatBtn.TextColor3 = Color3.fromRGB(255, 180, 255)
     floatBtn.Parent = sg
     floatBtn.ZIndex = 6
-    floatBtn.Draggable = true
 
     -- Título
     local title = Instance.new("TextLabel")
@@ -141,7 +140,7 @@ function RainbowUI:CreateWindow(width, height)
             startPos = frame.Position
             input.Changed:Connect(function()
                 if input.UserInputState == Enum.UserInputState.End then
-                    dragging = false
+                    dragging = true
                 end
             end)
         end
