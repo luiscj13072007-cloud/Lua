@@ -124,6 +124,7 @@ function RainbowUI:CreateWindow(width, height)
     uiList.Parent = scroll
     uiList.SortOrder = Enum.SortOrder.LayoutOrder
     uiList.Padding = UDim.new(0,4)
+    uiList.Draggable = true
 
     game:GetService("RunService").RenderStepped:Connect(function()
         for i,rf in ipairs(borders) do
