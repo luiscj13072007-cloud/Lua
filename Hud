@@ -13,7 +13,6 @@ function RainbowUI:CreateWindow(width, height)
     local sg = Instance.new("ScreenGui")
     sg.Name = "RainbowUI"
     sg.ResetOnSpawn = false
-    sg.Draggable = true
     sg.IgnoreGuiInset = true
     if syn and syn.protect_gui then syn.protect_gui(sg) end
     sg.Parent = game:GetService("Players").LocalPlayer.PlayerGui
@@ -23,6 +22,7 @@ function RainbowUI:CreateWindow(width, height)
     frame.Size = UDim2.new(0, width, 0, height)
     frame.Position = UDim2.fromOffset(160, 180)
     frame.BackgroundTransparency = 1
+    frame.Draggable = true
     frame.Parent = sg
 
     local borders = {}
