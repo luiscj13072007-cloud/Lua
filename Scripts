@@ -1,5 +1,5 @@
 -- Carga de la UI/HUD
-local RainbowUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/luiscj13072007-cloud/Library/refs/heads/main/library.lua"))()
+local RainbowUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/luiscj13072007-cloud/Lua/refs/heads/main/Hud"))()
 local hud = RainbowUI:CreateWindow() -- no necesitas poner título
 
 local RunService = game:GetService("RunService")
