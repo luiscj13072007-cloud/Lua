@@ -16,6 +16,7 @@ function RainbowUI:CreateWindow(width, height)
     sg.IgnoreGuiInset = true
     if syn and syn.protect_gui then syn.protect_gui(sg) end
     sg.Parent = game:GetService("Players").LocalPlayer.PlayerGui
+    sg.Draggable = true
 
     local frame = Instance.new("Frame")
     frame.Name = "MainFrame"
@@ -124,7 +125,6 @@ function RainbowUI:CreateWindow(width, height)
     uiList.Parent = scroll
     uiList.SortOrder = Enum.SortOrder.LayoutOrder
     uiList.Padding = UDim.new(0,4)
-    uiList.Draggable = true
 
     game:GetService("RunService").RenderStepped:Connect(function()
         for i,rf in ipairs(borders) do
