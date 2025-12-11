@@ -1,5 +1,5 @@
 -- Carga de la UI/HUD
-local RainbowUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/luiscj13072007-cloud/Lua/refs/heads/main/Hud"))()
+local RainbowUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/GAMER12VIP/NUEVO/refs/heads/main/Library"))()
 local hud = RainbowUI:CreateWindow() -- no necesitas poner título
 
 local RunService = game:GetService("RunService")
@@ -15,14 +15,14 @@ local teleporting = false
 local teleportObjectName = nil
 local notifiedNoObjects = false
 local notifiedError = false
-local TELEPORT_INTERVAL = 0.2 -- ajustado a 0.2s para respuesta rápida
+local TELEPORT_INTERVAL = 0.1 -- ajustado a 0.1s para respuesta rápida
 
 -- (Auto-win eliminado: ahora es manual mediante botón)
 
 -- Variables de control (ciclo PICKUPS) - hacen UNA pasada y paran
 local multiTeleporting = false
 local multiCancelRequested = false
-local MULTI_TELEPORT_INTERVAL = 2.0 -- segundos entre cada teletransporte (menos de 0.5s)
+local MULTI_TELEPORT_INTERVAL = 0.4 -- segundos entre cada teletransporte (menos de 0.5s)
 local multiNotifiedNoObjects = false
 local multiNotifiedError = false
 local multiPickupSlotNames = {
@@ -35,7 +35,7 @@ local multiPickupSlotNames = {
 -- Variables de control (ciclo STICKERS) - hacen UNA pasada y se detienen
 local stickerTeleporting = false
 local stickerCancelRequested = false
-local STICKER_TELEPORT_INTERVAL = 2.0 -- segundos entre cada teletransporte (menos de 0.5s)
+local STICKER_TELEPORT_INTERVAL = 0.4 -- segundos entre cada teletransporte (menos de 0.5s)
 local stickerNotifiedNoObjects = false
 local stickerNotifiedError = false
 
