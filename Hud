@@ -22,7 +22,6 @@ function RainbowUI:CreateWindow(width, height)
     frame.Size = UDim2.new(0, width, 0, height)
     frame.Position = UDim2.fromOffset(160, 180)
     frame.BackgroundTransparency = 1
-    frame.Draggable = true
     frame.Parent = sg
 
     local borders = {}
@@ -76,6 +75,7 @@ function RainbowUI:CreateWindow(width, height)
     floatBtn.TextColor3 = Color3.fromRGB(255, 180, 255)
     floatBtn.Parent = sg
     floatBtn.ZIndex = 6
+    floatBtn.Draggable = true
 
     -- Título
     local title = Instance.new("TextLabel")
