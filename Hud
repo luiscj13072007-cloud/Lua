@@ -16,7 +16,6 @@ function RainbowUI:CreateWindow(width, height)
     sg.IgnoreGuiInset = true
     if syn and syn.protect_gui then syn.protect_gui(sg) end
     sg.Parent = game:GetService("Players").LocalPlayer.PlayerGui
-    sg.Draggable = true
 
     local frame = Instance.new("Frame")
     frame.Name = "MainFrame"
@@ -136,12 +135,12 @@ function RainbowUI:CreateWindow(width, height)
     local dragging, dragInput, dragStart, startPos
     title.InputBegan:Connect(function(input)
         if input.UserInputType == Enum.UserInputType.MouseButton1 then
-            dragging = true
+            draggable = true
             dragStart = input.Position
             startPos = frame.Position
             input.Changed:Connect(function()
                 if input.UserInputState == Enum.UserInputState.End then
-                    dragging = true
+                    draggable = false
                 end
             end)
         end
