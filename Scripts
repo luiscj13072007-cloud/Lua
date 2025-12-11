@@ -22,7 +22,7 @@ local TELEPORT_INTERVAL = 0.1 -- ajustado a 0.1s para respuesta rápida
 -- Variables de control (ciclo PICKUPS) - hacen UNA pasada y paran
 local multiTeleporting = false
 local multiCancelRequested = false
-local MULTI_TELEPORT_INTERVAL = 0.4 -- segundos entre cada teletransporte (menos de 0.5s)
+local MULTI_TELEPORT_INTERVAL = 2.0 -- segundos entre cada teletransporte (de 2.0s)
 local multiNotifiedNoObjects = false
 local multiNotifiedError = false
 local multiPickupSlotNames = {
@@ -35,7 +35,7 @@ local multiPickupSlotNames = {
 -- Variables de control (ciclo STICKERS) - hacen UNA pasada y se detienen
 local stickerTeleporting = false
 local stickerCancelRequested = false
-local STICKER_TELEPORT_INTERVAL = 0.4 -- segundos entre cada teletransporte (menos de 0.5s)
+local STICKER_TELEPORT_INTERVAL = 2.0 -- segundos entre cada teletransporte (menos de 2.0s)
 local stickerNotifiedNoObjects = false
 local stickerNotifiedError = false
 
